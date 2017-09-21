@@ -1,0 +1,9 @@
+library("lubridate")
+library("plyr")
+library("stringr")
+library("pastecs")
+library("oce")
+
+
+GOM$GISDATE <- str_c(GOM$Year, GOM$Month, GOM$Day, sep ="-")
+Alaska$GISDATE <- str_c(Alaska$Year, Alaska$month, sep = "-")
