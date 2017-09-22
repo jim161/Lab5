@@ -1,9 +1,13 @@
-library("lubridate")
-library("plyr")
-library("stringr")
-library("pastecs")
-library("oce")
+Version: 1.0
 
+RestoreWorkspace: Default
+SaveWorkspace: Default
+AlwaysSaveHistory: Default
 
-GOM$GISDATE <- str_c(GOM$Year, GOM$Month, GOM$Day, sep ="-")
-Alaska$GISDATE <- str_c(Alaska$Year, Alaska$month, sep = "-")
+EnableCodeIndexing: Yes
+UseSpacesForTab: Yes
+NumSpacesForTab: 2
+Encoding: UTF-8
+
+RnwWeave: Sweave
+LaTeX: pdfLaTeX
