@@ -1,13 +1,14 @@
-Version: 1.0
+library("lubridate")
+library("plyr")
+library("stringr")
+library("pastecs")
+library("oce")
 
-RestoreWorkspace: Default
-SaveWorkspace: Default
-AlwaysSaveHistory: Default
+#ARC GIS Date Fromatting (Date stringing and Decimal Formatting)
 
-EnableCodeIndexing: Yes
-UseSpacesForTab: Yes
-NumSpacesForTab: 2
-Encoding: UTF-8
+GOM$Month <- sprintf("%02d", GOM$Month)
+GOM$Day <- sprintf("%02d", GOM$Day)
+GOM$GISDATE <- str_c(GOM$Year, GOM$Month, GOM$Day, sep ="-")
 
-RnwWeave: Sweave
-LaTeX: pdfLaTeX
+Alaska$month <- sprintf("%02d", Alaska$month)
+Alaska$GISDATE <- str_c(Alaska$Year, Alaska$month, "00", sep = "-")
