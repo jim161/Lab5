@@ -4,7 +4,7 @@ library("stringr")
 library("pastecs")
 library("oce")
 
-#ARC GIS Date Fromatting (Date stringing and Decimal Formatting)
+#ARC GIS Date Fromatting. (Date stringing and Decimal Formatting)
 
 GOM$Month <- sprintf("%02d", GOM$Month)
 GOM$Day <- sprintf("%02d", GOM$Day)
