@@ -1,1 +1,3 @@
-See maps for estimated area :)
+Alaska Survey Area = ~424646823 Sq Km
+Gulf of Mexico Survey Area = ~264164274 Sq Km
+Peru Survey Area = ~222213744 Sq Km
